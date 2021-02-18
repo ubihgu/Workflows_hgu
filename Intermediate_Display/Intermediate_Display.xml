@@ -1,0 +1,34 @@
+<ObjectDefinition>
+  <variables frozen="0">
+    <variable displayName="Message" name="params.message" startIncrement="0" type="String" mandatoryArray="false" visible="true" description="" groupSeparator="" groupDisplayName="" displayOrder="0" increment="0" refServiceURI="" keepOnImport="false" editable="false" onlyDetailView="false" localVarNameMatch="" remoteVarNameMatch="" arrayCanAdd="true" arrayCanRemove="true" arrayCanMove="true" arrayCanEdit="true" displayNameHeader="" fullDisplayName="" isMandatory="false" isUserLocked="false" isGrouped="false" isSearchable="false" isUniqueGlobal="false"/>
+  </variables>
+  <example/>
+  <process name="Process/Intermediate_Display/New_Instance">
+    <displayName>New Instance</displayName>
+    <type>CREATE</type>
+    <visibility>0</visibility>
+    <task name="New_Instance_Instantiate.py">
+      <processPath>/opt/fmc_repository/Process/Intermediate_Display</processPath>
+      <displayName>Instantiate</displayName>
+    </task>
+  </process>
+  <process name="Process/Intermediate_Display/Update">
+    <displayName>Update</displayName>
+    <type>UPDATE</type>
+    <visibility>0</visibility>
+    <task name="Update_Update.py">
+      <processPath>/opt/fmc_repository/Process/Intermediate_Display</processPath>
+      <displayName>Update</displayName>
+    </task>
+  </process>
+  <information>
+    <icon/>
+    <description/>
+    <displayField>service_id</displayField>
+    <serviceTaskType>python</serviceTaskType>
+    <order>10000</order>
+    <visibility>5</visibility>
+    <name>Intermediate results display</name>
+    <group/>
+  </information>
+</ObjectDefinition>

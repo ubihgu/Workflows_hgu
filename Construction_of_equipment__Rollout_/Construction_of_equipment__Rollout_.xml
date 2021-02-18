@@ -1,0 +1,120 @@
+<ObjectDefinition>
+  <variables frozen="0">
+    <variable displayName="Construction Name" name="params.construction_name" startIncrement="0" type="String" mandatoryArray="false" visible="true" description="" groupSeparator="" groupDisplayName="" displayOrder="0" increment="0" refServiceURI="" keepOnImport="false" editable="true" onlyDetailView="false" localVarNameMatch="" remoteVarNameMatch="" arrayCanAdd="true" arrayCanRemove="true" arrayCanMove="true" arrayCanEdit="true" displayNameHeader="" fullDisplayName="" default="ER-A2" isMandatory="false" isUserLocked="false" isGrouped="false" isSearchable="false" isUniqueGlobal="false"/>
+    <variable displayName="Device Name" name="params.additional_device_name" startIncrement="0" type="String" mandatoryArray="false" visible="true" description="" groupSeparator="" groupDisplayName="" displayOrder="0" increment="0" refServiceURI="" keepOnImport="false" editable="false" onlyDetailView="false" localVarNameMatch="" remoteVarNameMatch="" arrayCanAdd="true" arrayCanRemove="true" arrayCanMove="true" arrayCanEdit="true" displayNameHeader="" fullDisplayName="" isMandatory="false" isUserLocked="false" isGrouped="false" isSearchable="false" isUniqueGlobal="false"/>
+    <variable displayName="Device IP" name="params.additional_device_ip" startIncrement="0" type="String" mandatoryArray="false" visible="true" description="" groupSeparator="" groupDisplayName="" displayOrder="0" increment="0" refServiceURI="" keepOnImport="false" editable="true" onlyDetailView="false" localVarNameMatch="" remoteVarNameMatch="" arrayCanAdd="true" arrayCanRemove="true" arrayCanMove="true" arrayCanEdit="true" displayNameHeader="" fullDisplayName="" default="172.31.13.187" isMandatory="false" isUserLocked="false" isGrouped="false" isSearchable="false" isUniqueGlobal="false"/>
+    <variable displayName="Device NW prefix" name="params.network_prefix" startIncrement="0" type="Integer" mandatoryArray="false" visible="true" description="" groupSeparator="" groupDisplayName="" displayOrder="0" increment="0" refServiceURI="" keepOnImport="false" editable="true" onlyDetailView="false" localVarNameMatch="" remoteVarNameMatch="" arrayCanAdd="true" arrayCanRemove="true" arrayCanMove="true" arrayCanEdit="true" displayNameHeader="" fullDisplayName="" default="24" isMandatory="false" isUserLocked="false" isGrouped="false" isSearchable="false" isUniqueGlobal="false">
+      <values>
+        <values displayValue="8">8</values>
+        <values displayValue="16">16</values>
+        <values displayValue="24">24</values>
+      </values>
+    </variable>
+    <variable displayName="Neighbor Name" name="params.adjacent_cr_name" startIncrement="0" type="String" mandatoryArray="false" visible="true" description="" groupSeparator="" groupDisplayName="" displayOrder="0" increment="0" refServiceURI="" keepOnImport="false" editable="true" onlyDetailView="false" localVarNameMatch="" remoteVarNameMatch="" arrayCanAdd="true" arrayCanRemove="true" arrayCanMove="true" arrayCanEdit="true" displayNameHeader="" fullDisplayName="" default="CR-A" isMandatory="false" isUserLocked="false" isGrouped="false" isSearchable="false" isUniqueGlobal="false"/>
+    <variable displayName="Neighbor IP" name="params.adjacent_cr_ip" startIncrement="0" type="String" mandatoryArray="false" visible="true" description="" groupSeparator="" groupDisplayName="" displayOrder="0" increment="0" refServiceURI="" keepOnImport="false" editable="true" onlyDetailView="false" localVarNameMatch="" remoteVarNameMatch="" arrayCanAdd="true" arrayCanRemove="true" arrayCanMove="true" arrayCanEdit="true" displayNameHeader="" fullDisplayName="" default="172.31.7.163" isMandatory="false" isUserLocked="false" isGrouped="false" isSearchable="false" isUniqueGlobal="false"/>
+    <variable displayName="ID" name="params.id" startIncrement="0" type="Integer" mandatoryArray="false" visible="true" description="" groupSeparator="" groupDisplayName="" displayOrder="0" increment="0" refServiceURI="" keepOnImport="false" editable="true" onlyDetailView="false" localVarNameMatch="" remoteVarNameMatch="" arrayCanAdd="true" arrayCanRemove="true" arrayCanMove="true" arrayCanEdit="true" displayNameHeader="" fullDisplayName="" default="1" isMandatory="false" isUserLocked="false" isGrouped="false" isSearchable="false" isUniqueGlobal="false"/>
+    <variable displayName="Destination Port" name="params.dst_port" startIncrement="0" type="Integer" mandatoryArray="false" visible="true" description="" groupSeparator="" groupDisplayName="" displayOrder="0" increment="0" refServiceURI="" keepOnImport="false" editable="true" onlyDetailView="false" localVarNameMatch="" remoteVarNameMatch="" arrayCanAdd="true" arrayCanRemove="true" arrayCanMove="true" arrayCanEdit="true" displayNameHeader="" fullDisplayName="" default="20001" isMandatory="false" isUserLocked="false" isGrouped="false" isSearchable="false" isUniqueGlobal="false"/>
+    <variable displayName="prev_device_ip" name="params.prev_device_ip" startIncrement="0" type="String" mandatoryArray="false" visible="false" description="" groupSeparator="" groupDisplayName="" displayOrder="8" increment="0" refServiceURI="" keepOnImport="false" editable="false" onlyDetailView="false" localVarNameMatch="" remoteVarNameMatch="" arrayCanAdd="true" arrayCanRemove="true" arrayCanMove="true" arrayCanEdit="true" displayNameHeader="" fullDisplayName="" default="" isMandatory="false" isUserLocked="false" isGrouped="false" isSearchable="false" isUniqueGlobal="false"/>
+    <variable displayName="prev_cr_ip" name="params.prev_cr_ip" startIncrement="0" type="String" mandatoryArray="false" visible="false" description="" groupSeparator="" groupDisplayName="" displayOrder="9" increment="0" refServiceURI="" keepOnImport="false" editable="false" onlyDetailView="false" localVarNameMatch="" remoteVarNameMatch="" arrayCanAdd="true" arrayCanRemove="true" arrayCanMove="true" arrayCanEdit="true" displayNameHeader="" fullDisplayName="" default="" isMandatory="false" isUserLocked="false" isGrouped="false" isSearchable="false" isUniqueGlobal="false"/>
+    <variable displayName="prev_prefix" name="params.prev_prefix" startIncrement="0" type="Integer" mandatoryArray="false" visible="false" description="" groupSeparator="" groupDisplayName="" displayOrder="10" increment="0" refServiceURI="" keepOnImport="false" editable="false" onlyDetailView="false" localVarNameMatch="" remoteVarNameMatch="" arrayCanAdd="true" arrayCanRemove="true" arrayCanMove="true" arrayCanEdit="true" displayNameHeader="" fullDisplayName="" default="" isMandatory="false" isUserLocked="false" isGrouped="false" isSearchable="false" isUniqueGlobal="false"/>
+    <variable displayName="tmp_device_ip" name="params.tmp_device_ip" startIncrement="0" type="String" mandatoryArray="false" visible="false" description="" groupSeparator="" groupDisplayName="" displayOrder="11" increment="0" refServiceURI="" keepOnImport="false" editable="false" onlyDetailView="false" localVarNameMatch="" remoteVarNameMatch="" arrayCanAdd="true" arrayCanRemove="true" arrayCanMove="true" arrayCanEdit="true" displayNameHeader="" fullDisplayName="" default="" isMandatory="false" isUserLocked="false" isGrouped="false" isSearchable="false" isUniqueGlobal="false"/>
+    <variable displayName="tmp_cr_ip" name="params.tmp_cr_ip" startIncrement="0" type="String" mandatoryArray="false" visible="false" description="" groupSeparator="" groupDisplayName="" displayOrder="12" increment="0" refServiceURI="" keepOnImport="false" editable="false" onlyDetailView="false" localVarNameMatch="" remoteVarNameMatch="" arrayCanAdd="true" arrayCanRemove="true" arrayCanMove="true" arrayCanEdit="true" displayNameHeader="" fullDisplayName="" default="" isMandatory="false" isUserLocked="false" isGrouped="false" isSearchable="false" isUniqueGlobal="false"/>
+    <variable displayName="tmp_prefix" name="params.tmp_prefix" startIncrement="0" type="Integer" mandatoryArray="false" visible="false" description="" groupSeparator="" groupDisplayName="" displayOrder="13" increment="0" refServiceURI="" keepOnImport="false" editable="false" onlyDetailView="false" localVarNameMatch="" remoteVarNameMatch="" arrayCanAdd="true" arrayCanRemove="true" arrayCanMove="true" arrayCanEdit="true" displayNameHeader="" fullDisplayName="" default="" isMandatory="false" isUserLocked="false" isGrouped="false" isSearchable="false" isUniqueGlobal="false"/>
+  </variables>
+  <example/>
+  <process name="Process/Construction_of_equipment__Rollout_/Basic_configuration_of_new_ER_Edge_Router_">
+    <displayName>Configure New ER</displayName>
+    <type>CREATE</type>
+    <visibility>0</visibility>
+    <task name="Basic_configuration_of_new_ER_Edge_Router__Config_generation.py">
+      <processPath>/opt/fmc_repository/Process/Construction_of_equipment__Rollout_</processPath>
+      <displayName>Config generation</displayName>
+    </task>
+    <task name="Basic_configuration_of_new_ER_Edge_Router__Configuration.py">
+      <processPath>/opt/fmc_repository/Process/Construction_of_equipment__Rollout_</processPath>
+      <displayName>Configuration</displayName>
+    </task>
+    <task name="configure_new_ER_Test.py">
+      <processPath>/opt/fmc_repository/Process/Construction_of_equipment__Rollout_</processPath>
+      <displayName>Test</displayName>
+    </task>
+    <task name="Basic_configuration_of_new_ER_Edge_Router__Notification.py">
+      <processPath>/opt/fmc_repository/Process/Construction_of_equipment__Rollout_</processPath>
+      <displayName>Notification</displayName>
+    </task>
+  </process>
+  <process name="Process/Construction_of_equipment__Rollout_/Update">
+    <displayName>Update</displayName>
+    <type>UPDATE</type>
+    <visibility>0</visibility>
+    <task name="Basic_configuration_of_new_ER_Edge_Router__Config_generation.py">
+      <processPath>/opt/fmc_repository/Process/Construction_of_equipment__Rollout_</processPath>
+      <displayName>Config generation</displayName>
+    </task>
+    <task name="Basic_configuration_of_new_ER_Edge_Router__Configuration.py">
+      <processPath>/opt/fmc_repository/Process/Construction_of_equipment__Rollout_</processPath>
+      <displayName>Configuration</displayName>
+    </task>
+    <task name="configure_new_ER_Test.py">
+      <processPath>/opt/fmc_repository/Process/Construction_of_equipment__Rollout_</processPath>
+      <displayName>Test</displayName>
+    </task>
+    <task name="Basic_configuration_of_new_ER_Edge_Router__Notification.py">
+      <processPath>/opt/fmc_repository/Process/Construction_of_equipment__Rollout_</processPath>
+      <displayName>Notification</displayName>
+    </task>
+  </process>
+  <process name="Process/Construction_of_equipment__Rollout_/Rollback_of_ER_establishment">
+    <displayName>Rollback</displayName>
+    <type>UPDATE</type>
+    <visibility>5</visibility>
+    <task name="Rollback_of_ER_establishment_Rollback.py">
+      <processPath>/opt/fmc_repository/Process/Construction_of_equipment__Rollout_</processPath>
+      <displayName>Rollback</displayName>
+    </task>
+    <task name="Rollback_of_ER_establishment_Notification.py">
+      <processPath>/opt/fmc_repository/Process/Construction_of_equipment__Rollout_</processPath>
+      <displayName>Notification</displayName>
+    </task>
+  </process>
+  <process name="Process/Construction_of_equipment__Rollout_/Delete">
+    <displayName>Delete</displayName>
+    <type>DELETE</type>
+    <visibility>0</visibility>
+    <task name="Delete_Delete_Instance.py">
+      <processPath>/opt/fmc_repository/Process/Construction_of_equipment__Rollout_</processPath>
+      <displayName>Delete Instance</displayName>
+    </task>
+  </process>
+  <process name="Process/Construction_of_equipment__Rollout_/Configure_New_ER__CUSTOM_">
+    <displayName>Configure New ER (CUSTOM)</displayName>
+    <type>CREATE</type>
+    <visibility>0</visibility>
+    <task name="Configure_New_ER__CUSTOM__Config_generation__CUSTOM_.py">
+      <processPath>/opt/fmc_repository/Process/Construction_of_equipment__Rollout_</processPath>
+      <displayName>Config generation (CUSTOM)</displayName>
+    </task>
+    <task name="Configure_New_ER__CUSTOM__Configuration__CUSTOM_.py">
+      <processPath>/opt/fmc_repository/Process/Construction_of_equipment__Rollout_</processPath>
+      <displayName>Configuration (CUSTOM)</displayName>
+    </task>
+    <task name="Configure_New_ER__CUSTOM__Test__CUSTOM_.py">
+      <processPath>/opt/fmc_repository/Process/Construction_of_equipment__Rollout_</processPath>
+      <displayName>Test (CUSTOM)</displayName>
+    </task>
+    <task name="Configure_New_ER__CUSTOM__Notification__CUSTOM_.py">
+      <processPath>/opt/fmc_repository/Process/Construction_of_equipment__Rollout_</processPath>
+      <displayName>Notification (CUSTOM)</displayName>
+    </task>
+  </process>
+  <information>
+    <icon/>
+    <description>NEC NTT DOCOMO RFP</description>
+    <displayField>service_id</displayField>
+    <serviceTaskType>python</serviceTaskType>
+    <order>10000</order>
+    <visibility>0</visibility>
+    <name>Construction of equipment (Rollout)</name>
+    <group/>
+  </information>
+</ObjectDefinition>
