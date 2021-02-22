@@ -12,9 +12,15 @@
       <processPath>/opt/fmc_repository/Process/workflows/HguSandBox/Process_Set/Tasks</processPath>
       <displayName>Init</displayName>
     </task>
-    <task name="Task_Update.py">
-      <processPath>/opt/fmc_repository/Process/workflows/HguSandBox/Process_Set/Tasks</processPath>
-      <displayName>Update</displayName>
+  </process>
+  <process name="Process/workflows/HguSandBox/Process_Update">
+    <displayName>Update</displayName>
+    <type>UPDATE</type>
+    <visibility>5</visibility>
+    <allowSchedule/>
+    <task name="Task_update.py">
+      <processPath>/opt/fmc_repository/Process/workflows/HguSandBox/Process_Update/Tasks</processPath>
+      <displayName>update</displayName>
     </task>
   </process>
   <information>
