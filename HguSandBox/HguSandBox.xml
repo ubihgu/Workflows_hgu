@@ -23,6 +23,12 @@
       <displayName>update</displayName>
     </task>
   </process>
+  <process name="Process/workflows/HguSandBox/Process_Delete">
+    <displayName>Delete</displayName>
+    <type>DELETE</type>
+    <visibility>5</visibility>
+    <allowSchedule/>
+  </process>
   <information>
     <icon/>
     <description/>
