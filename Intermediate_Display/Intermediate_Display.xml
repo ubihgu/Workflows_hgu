@@ -7,6 +7,7 @@
     <displayName>New Instance</displayName>
     <type>CREATE</type>
     <visibility>0</visibility>
+    <allowSchedule/>
     <task name="New_Instance_Instantiate.py">
       <processPath>/opt/fmc_repository/Process/Intermediate_Display</processPath>
       <displayName>Instantiate</displayName>
@@ -16,6 +17,7 @@
     <displayName>Update</displayName>
     <type>UPDATE</type>
     <visibility>0</visibility>
+    <allowSchedule/>
     <task name="Update_Update.py">
       <processPath>/opt/fmc_repository/Process/Intermediate_Display</processPath>
       <displayName>Update</displayName>
