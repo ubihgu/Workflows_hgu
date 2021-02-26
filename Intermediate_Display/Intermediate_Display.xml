@@ -1,12 +1,13 @@
 <ObjectDefinition>
   <variables frozen="0">
-    <variable displayName="Message" name="params.message" startIncrement="0" type="String" mandatoryArray="false" visible="true" description="" groupSeparator="" groupDisplayName="" displayOrder="0" increment="0" refServiceURI="" keepOnImport="false" editable="false" onlyDetailView="false" localVarNameMatch="" remoteVarNameMatch="" arrayCanAdd="true" arrayCanRemove="true" arrayCanMove="true" arrayCanEdit="true" displayNameHeader="" fullDisplayName="" isMandatory="false" isUserLocked="false" isGrouped="false" isSearchable="false" isUniqueGlobal="false"/>
+    <variable displayName="Message" name="params.message" startIncrement="0" type="String" mandatoryArray="false" visible="true" description="" groupSeparator="" groupDisplayName="" displayOrder="0" increment="0" refServiceURI="" keepOnImport="false" editable="false" onlyDetailView="false" localVarNameMatch="" remoteVarNameMatch="" arrayCanAdd="true" arrayCanRemove="true" arrayCanMove="true" arrayCanEdit="true" displayNameHeader="" fullDisplayName="" isMandatory="true" isUserLocked="false" isGrouped="false" isSearchable="false" isUniqueGlobal="false"/>
   </variables>
   <example/>
   <process name="Process/Intermediate_Display/New_Instance">
     <displayName>New Instance</displayName>
     <type>CREATE</type>
     <visibility>0</visibility>
+    <allowSchedule/>
     <task name="New_Instance_Instantiate.py">
       <processPath>/opt/fmc_repository/Process/Intermediate_Display</processPath>
       <displayName>Instantiate</displayName>
@@ -16,6 +17,7 @@
     <displayName>Update</displayName>
     <type>UPDATE</type>
     <visibility>0</visibility>
+    <allowSchedule/>
     <task name="Update_Update.py">
       <processPath>/opt/fmc_repository/Process/Intermediate_Display</processPath>
       <displayName>Update</displayName>

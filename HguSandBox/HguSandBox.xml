@@ -1,0 +1,42 @@
+<ObjectDefinition>
+  <variables frozen="0">
+    <variable displayName="HGU" name="params.hgu" startIncrement="0" type="Integer" mandatoryArray="false" visible="true" description="" groupSeparator="" groupDisplayName="" displayOrder="0" increment="0" refServiceURI="" keepOnImport="false" editable="false" onlyDetailView="false" localVarNameMatch="" remoteVarNameMatch="" arrayCanAdd="true" arrayCanRemove="true" arrayCanMove="true" arrayCanEdit="true" displayNameHeader="" fullDisplayName="" isMandatory="false" isUserLocked="false" isGrouped="false" isSearchable="false" isUniqueGlobal="false"/>
+  </variables>
+  <example/>
+  <process name="Process/workflows/HguSandBox/Process_Set">
+    <displayName>Set</displayName>
+    <type>CREATE</type>
+    <visibility>5</visibility>
+    <allowSchedule/>
+    <task name="Task_Init.py">
+      <processPath>/opt/fmc_repository/Process/workflows/HguSandBox/Process_Set/Tasks</processPath>
+      <displayName>Init</displayName>
+    </task>
+  </process>
+  <process name="Process/workflows/HguSandBox/Process_Update">
+    <displayName>Update</displayName>
+    <type>UPDATE</type>
+    <visibility>5</visibility>
+    <allowSchedule/>
+    <task name="Task_update.py">
+      <processPath>/opt/fmc_repository/Process/workflows/HguSandBox/Process_Update/Tasks</processPath>
+      <displayName>update</displayName>
+    </task>
+  </process>
+  <process name="Process/workflows/HguSandBox/Process_Delete">
+    <displayName>Delete</displayName>
+    <type>DELETE</type>
+    <visibility>5</visibility>
+    <allowSchedule/>
+  </process>
+  <information>
+    <icon/>
+    <description/>
+    <displayField>service_id</displayField>
+    <serviceTaskType>python</serviceTaskType>
+    <order>10000</order>
+    <visibility>5</visibility>
+    <name>HguSandBox</name>
+    <group/>
+  </information>
+</ObjectDefinition>
