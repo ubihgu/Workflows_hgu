@@ -22,8 +22,8 @@ function list_args()
   
 }
   $verb  = "JSSMSEXEC";
-  $param = "df";
-  $device_id = '125';
+  $param = "show logging";
+  $device_id = '138';
   $rawlogs_json = _secengine_perform_verb_on_device($device_id, $verb, $param);
   $rawlogs = json_decode($rawlogs_json, true);
 logToFile("---sh logging---\n". var_export($rawlogs, true));
