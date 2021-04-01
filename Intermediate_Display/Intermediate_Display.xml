@@ -3,23 +3,23 @@
     <variable displayName="Message" name="params.message" startIncrement="0" type="String" mandatoryArray="false" visible="true" description="" groupSeparator="" groupDisplayName="" displayOrder="0" increment="0" refServiceURI="" keepOnImport="false" editable="false" onlyDetailView="false" localVarNameMatch="" remoteVarNameMatch="" arrayCanAdd="true" arrayCanRemove="true" arrayCanMove="true" arrayCanEdit="true" displayNameHeader="" fullDisplayName="" isMandatory="true" isUserLocked="false" isGrouped="false" isSearchable="false" isUniqueGlobal="false"/>
   </variables>
   <example/>
-  <process name="Process/Intermediate_Display/New_Instance">
+  <process name="Process/workflows/Intermediate_Display/New_Instance">
     <displayName>New Instance</displayName>
     <type>CREATE</type>
     <visibility>0</visibility>
     <allowSchedule/>
     <task name="New_Instance_Instantiate.py">
-      <processPath>/opt/fmc_repository/Process/Intermediate_Display</processPath>
+      <processPath>/opt/fmc_repository/Process/workflows/Intermediate_Display</processPath>
       <displayName>Instantiate</displayName>
     </task>
   </process>
-  <process name="Process/Intermediate_Display/Update">
+  <process name="Process/workflows/Intermediate_Display/Update">
     <displayName>Update</displayName>
     <type>UPDATE</type>
     <visibility>0</visibility>
     <allowSchedule/>
     <task name="Update_Update.py">
-      <processPath>/opt/fmc_repository/Process/Intermediate_Display</processPath>
+      <processPath>/opt/fmc_repository/Process/workflows/Intermediate_Display</processPath>
       <displayName>Update</displayName>
     </task>
   </process>
@@ -30,7 +30,7 @@
     <serviceTaskType>python</serviceTaskType>
     <order>10000</order>
     <visibility>5</visibility>
-    <name>Intermediate results display</name>
+    <name>Sandbox</name>
     <group/>
   </information>
 </ObjectDefinition>
