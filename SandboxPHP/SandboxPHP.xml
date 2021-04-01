@@ -1,6 +1,26 @@
 <ObjectDefinition>
   <variables frozen="0"/>
   <example/>
+  <process name="Process/workflows/SandboxPHP/Process_New">
+    <displayName>New</displayName>
+    <type>CREATE</type>
+    <visibility>5</visibility>
+    <allowSchedule/>
+    <task name="Task_test.php">
+      <processPath>/opt/fmc_repository/Process/workflows/SandboxPHP/Process_New/Tasks</processPath>
+      <displayName>test</displayName>
+    </task>
+  </process>
+  <process name="Process/workflows/SandboxPHP/Process_Update">
+    <displayName>Update</displayName>
+    <type>UPDATE</type>
+    <visibility>5</visibility>
+    <allowSchedule/>
+    <task name="Task_test.php">
+      <processPath>/opt/fmc_repository/Process/workflows/SandboxPHP/Process_Update/Tasks</processPath>
+      <displayName>test</displayName>
+    </task>
+  </process>
   <information>
     <icon/>
     <description/>
