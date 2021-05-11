@@ -21,7 +21,7 @@ date = dateTimeObj.strftime(format)
 url = "http://msa_es:9200/ubilogs-"+date+"/_doc"
 '''
 url = "http://msa_es:9200/ubilogs-2021-05-11/_doc"
-
+time1 = "2021-05-11"
 message = context['message']
 device_id = context['device']
 severity = context['severity']
