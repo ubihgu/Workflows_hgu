@@ -29,6 +29,8 @@ payload = {"rawlog": ""+message+"", "device_id": ""+device_id+"", "date": ""+tim
 
 headers = {'content-type': 'application/json'}
 
-r = requests.post(url, json=payload, headers=headers)
+'''r = requests.post(url, json=payload, headers=headers)
 
 ret = MSA_API.process_content('ENDED', f'Post Result: {r}, url: {url}', context, True)
+'''
+ret = MSA_API.process_content('ENDED', f'Post Result: {payload}, url: {url}', context, True)
