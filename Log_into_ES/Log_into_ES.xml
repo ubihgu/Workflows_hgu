@@ -17,21 +17,23 @@
     <variable displayName="Type" name="params.type" startIncrement="0" type="String" mandatoryArray="false" visible="true" description="" groupSeparator="" groupDisplayName="" displayOrder="0" increment="0" refServiceURI="" keepOnImport="false" editable="true" onlyDetailView="false" localVarNameMatch="" remoteVarNameMatch="" arrayCanAdd="true" arrayCanRemove="true" arrayCanMove="true" arrayCanEdit="true" displayNameHeader="" fullDisplayName="" isMandatory="false" isUserLocked="false" isGrouped="false" isSearchable="false" isUniqueGlobal="false"/>
   </variables>
   <example/>
-  <process name="Process/Log_into_ES/Init">
+  <process name="Process/workflows/Log_into_ES/Init">
     <displayName>Init</displayName>
     <type>CREATE</type>
     <visibility>5</visibility>
+    <allowSchedule/>
     <task name="Init_Init.py">
-      <processPath>/opt/fmc_repository/Process/Log_into_ES</processPath>
+      <processPath>/opt/fmc_repository/Process/workflows/Log_into_ES</processPath>
       <displayName>Init</displayName>
     </task>
   </process>
-  <process name="Process/Log_into_ES/Write">
+  <process name="Process/workflows/Log_into_ES/Write">
     <displayName>Write</displayName>
     <type>UPDATE</type>
     <visibility>5</visibility>
+    <allowSchedule/>
     <task name="Write_Write.py">
-      <processPath>/opt/fmc_repository/Process/Log_into_ES</processPath>
+      <processPath>/opt/fmc_repository/Process/workflows/Log_into_ES</processPath>
       <displayName>Write</displayName>
     </task>
   </process>
