@@ -18,7 +18,7 @@ time1 = dateTimeObj.strftime(format)
 format = "%Y-%m-%d"
 date = dateTimeObj.strftime(format)
 
-url = "http://172.20.0.6:9200/ubilogs-"+date+"/_doc"
+url = "http://msa_es:9200/ubilogs-"+date+"/_doc"
 
 message = context['message']
 device_id = context['device']
