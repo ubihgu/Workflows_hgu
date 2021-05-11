@@ -12,16 +12,17 @@ dev_var.add('severity', var_type='integer')
 dev_var.add('type', var_type='String')
 context = Variables.task_call(dev_var)
 
-'''dateTimeObj = datetime.now()
+dateTimeObj = datetime.now()
 format = "%Y-%m-%dT%H:%M:%S+0000"
 time1 = dateTimeObj.strftime(format)
 format = "%Y-%m-%d"
 date = dateTimeObj.strftime(format)
 
 url = "http://msa_es:9200/ubilogs-"+date+"/_doc"
-'''
-url = "http://msa_es:9200/ubilogs-2021-05-11/_doc"
-time1 = "2021-05-11"
+
+'''url = "http://msa_es:9200/ubilogs-2021-05-11/_doc"
+time1 = "2021-05-11"'''
+
 message = context['message']
 device_id = context['device']
 severity = context['severity']
