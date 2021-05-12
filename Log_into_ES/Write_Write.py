@@ -24,8 +24,10 @@ message = context['message']
 device_id = context['device']
 severity = context['severity']
 type_id = context['type']
+subtenant_ref = context["UBIQUBEID"]
+subtenant_id = context["UBIQUBEID"][4:]
 
-payload = {"rawlog": ""+message+"", "device_id": ""+device_id+"", "date": ""+time1+"", "customer_ref": "BLRA6", "severity": ""+severity+"", "type": ""+type_id+"", "subtype": "WF"}
+payload = {"rawlog": ""+message+"", "device_id": ""+device_id+"", "date": ""+time1+"", "customer_ref": ""+subtenant_ref+"", "customer_id": ""+subtenant_id+"", "severity": ""+severity+"", "type": ""+type_id+"", "subtype": "WF"}
 
 headers = {'content-type': 'application/json'}
 
