@@ -35,7 +35,7 @@ for v in context['docker_containers']:
 
 # call the CREATE for simple_firewall MS for each device
 order = Order(devicelongid)
-order.command_execute('CREATE', object_parameters)
+order.command_execute('DELETE', object_parameters)
 
 # convert dict object into json
 content = json.loads(order.content)
@@ -48,7 +48,7 @@ if order.response.ok:
                                   context, True)
 else:
     ret = MSA_API.process_content('FAILED',
-                                  f'Import failed \
+                                  f'Delete failed \
                                   - {order.content}',
                                   context, True)
 
