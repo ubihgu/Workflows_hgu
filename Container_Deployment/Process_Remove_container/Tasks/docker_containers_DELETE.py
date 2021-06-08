@@ -37,7 +37,7 @@ if order.response.ok:
                                   context, True)
 else:
     ret = MSA_API.process_content('FAILED',
-                                  f'Import failed \
+                                  f'Delete failed \
                                   - {order.content}',
                                   context, True)
 
