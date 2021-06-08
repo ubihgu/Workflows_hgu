@@ -24,13 +24,14 @@ device_id = context['device_id']
 devicelongid = device_id[3:]
 
 # build the Microservice JSON params for IMPORT
-#{"Gateway":"0"}
+#{"Gateway":"0"}: Command CREATE Parameters {"docker_containers":{"null":{"names":"nginx","status":null,"created":null,"image":"nginx","object_id":null,"command":null,"networkport":"8042","containerport":"8042"}}}
+
 #micro_service_vars_array = {"object_id":object_id}
 object_parameters = {}
 
 object_parameters['docker_containers'] = {}
 for v in context['docker_containers']:
-  object_parameters['docker_containers'][v['object_id']] = v
+  object_parameters['docker_containers'][v['names']] = v
 
 
 # call the CREATE for simple_firewall MS for each device
@@ -48,7 +49,7 @@ if order.response.ok:
                                   context, True)
 else:
     ret = MSA_API.process_content('FAILED',
-                                  f'Import failed \
+                                  f'Create failed \
                                   - {order.content}',
                                   context, True)
 
