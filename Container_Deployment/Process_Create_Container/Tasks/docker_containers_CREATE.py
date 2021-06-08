@@ -6,11 +6,11 @@ from msa_sdk.order import Order
 # List all the parameters required by the task
 dev_var = Variables()
 dev_var.add('device_id', var_type='Device')
-dev_var.add('docker_containers.0.names', var_type='String')
+dev_var.add('docker_containers.0.object_id', var_type='String')
 dev_var.add('docker_containers.0.status', var_type='String')
 dev_var.add('docker_containers.0.created', var_type='String')
 dev_var.add('docker_containers.0.image', var_type='String')
-dev_var.add('docker_containers.0.object_id', var_type='String')
+dev_var.add('docker_containers.0.container_id', var_type='String')
 dev_var.add('docker_containers.0.command', var_type='String')
 dev_var.add('docker_containers.0.networkport', var_type='String')
 dev_var.add('docker_containers.0.containerport', var_type='String')
@@ -24,14 +24,13 @@ device_id = context['device_id']
 devicelongid = device_id[3:]
 
 # build the Microservice JSON params for IMPORT
-#{"Gateway":"0"}: Command CREATE Parameters {"docker_containers":{"null":{"names":"nginx","status":null,"created":null,"image":"nginx","object_id":null,"command":null,"networkport":"8042","containerport":"8042"}}}
-
+#{"Gateway":"0"}
 #micro_service_vars_array = {"object_id":object_id}
 object_parameters = {}
 
 object_parameters['docker_containers'] = {}
 for v in context['docker_containers']:
-  object_parameters['docker_containers'][v['names']] = v
+  object_parameters['docker_containers'][v['object_id']] = v
 
 
 # call the CREATE for simple_firewall MS for each device
@@ -49,7 +48,7 @@ if order.response.ok:
                                   context, True)
 else:
     ret = MSA_API.process_content('FAILED',
-                                  f'Create failed \
+                                  f'Import failed \
                                   - {order.content}',
                                   context, True)
 
