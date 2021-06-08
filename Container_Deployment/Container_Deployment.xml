@@ -27,6 +27,16 @@
       <displayName>Delete Instance</displayName>
     </task>
   </process>
+  <process name="Process/workflows/Container_Deployment/Process_Remove_container">
+    <displayName>Remove container</displayName>
+    <type>UPDATE</type>
+    <visibility>5</visibility>
+    <allowSchedule/>
+    <task name="docker_containers_DELETE.py">
+      <processPath>/opt/fmc_repository/Process/workflows/Container_Deployment/Process_Remove_container/Tasks</processPath>
+      <displayName>Remove container</displayName>
+    </task>
+  </process>
   <information>
     <icon/>
     <description>Docker Container Management</description>
