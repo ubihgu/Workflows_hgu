@@ -34,7 +34,7 @@
     <allowSchedule/>
     <task name="docker_containers_DELETE.py">
       <processPath>/opt/fmc_repository/Process/workflows/Container_Deployment/Process_Remove_container/Tasks</processPath>
-      <displayName>Remove container</displayName>
+      <displayName>Remmove</displayName>
     </task>
   </process>
   <information>
