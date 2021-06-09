@@ -44,7 +44,7 @@
   <information>
     <icon/>
     <description>Docker Container Management</description>
-    <displayField>service_id</displayField>
+    <displayField>docker_containers.0.object_id</displayField>
     <serviceTaskType>python</serviceTaskType>
     <order>10000</order>
     <visibility>5</visibility>
