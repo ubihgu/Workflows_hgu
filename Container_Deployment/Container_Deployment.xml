@@ -40,6 +40,10 @@
       <processPath>/opt/fmc_repository/Process/workflows/Container_Deployment/Process_Remove_container/Tasks</processPath>
       <displayName>Remove Container</displayName>
     </task>
+    <task name="Task_Synchronise.py">
+      <processPath>/opt/fmc_repository/Process/workflows/Container_Deployment/Process_Remove_container/Tasks</processPath>
+      <displayName>Synchronise</displayName>
+    </task>
   </process>
   <information>
     <icon/>
