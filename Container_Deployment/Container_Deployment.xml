@@ -16,6 +16,10 @@
       <processPath>/opt/fmc_repository/Process/workflows/Container_Deployment/Process_Create_Container/Tasks</processPath>
       <displayName>Deploy new container</displayName>
     </task>
+    <task name="docker_containers_IMPORT.py">
+      <processPath>/opt/fmc_repository/Process/workflows/Container_Deployment/Process_Create_Container/Tasks</processPath>
+      <displayName>Synchronise</displayName>
+    </task>
   </process>
   <process name="Process/workflows/Container_Deployment/Process_Delete_Instance">
     <displayName>Delete Instance</displayName>
