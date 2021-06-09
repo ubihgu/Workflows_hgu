@@ -19,7 +19,9 @@ devicelongid = device_id[3:]
 #{"Gateway":"0"}
 #micro_service_vars_array = {"object_id":object_id}
 object_parameters = {}
-
+object_parameters['docker_containers'] = {}
+for v in context['docker_containers']:
+  object_parameters['docker_containers'][v['object_id']] = v
 
 
 # call the CREATE for simple_firewall MS for each device
