@@ -1,6 +1,12 @@
 <ObjectDefinition>
   <variables frozen="0"/>
   <example/>
+  <process name="Process/workflows/VLAN_RESOURCES_MANAGEMENT/Process_New">
+    <displayName>New</displayName>
+    <type>CREATE</type>
+    <visibility>5</visibility>
+    <allowSchedule/>
+  </process>
   <information>
     <icon/>
     <description>VLAN INVENTORY</description>
